@@ -1,0 +1,31 @@
+1. Bubble Sort:
+   Neste primeiro algoritmo de Bubble Sort, a complexidade de sua função será n² no pior caso. 
+   Caso seja necessário explicitar as constantes da função, a complexidade será n² + 4, devido às linhas 5 a 8, 
+   responsáveis pela troca e ordenação dos elementos. Dado que o algoritmo possui dois laços de repetição aninhados, 
+   sua complexidade média será menor que n² e, para o melhor caso, quando o vetor está parcialmente ordenado, 
+   a complexidade será linear (n).
+
+2. Bubble Sort 2:
+   Essa segunda versão do Bubble Sort apresenta uma variação na construção. 
+   Ao contrário do primeiro algoritmo, que utiliza dois laços para realizar n iterações, 
+   este segundo algoritmo utiliza uma variável booleana como controle no primeiro laço 'while'. 
+   Enquanto essa variável for True, mais iterações serão realizadas. 
+   No entanto, caso ocorra alguma troca de valores, o loop 'while' ocorrerá novamente, 
+   exigindo 'k' iterações por troca no pior caso, 
+   resultando em uma complexidade abaixo de n² para o caso médio e n² para o pior caso.
+
+3. Algumacoisa:
+   O algoritmo apresenta uma complexidade considerada constante para todos os casos (melhor, médio, pior). 
+   Embora contenha três loops no código, uma análise mais profunda revela que, 
+   para entradas muito pequenas de 'n', pode se comportar como tempo 'n'. 
+   Entretanto, para valores maiores de 'n', a quantidade de iterações depende do argumento passado ao método. 
+   Os loops interagem de maneira que o aumento nas iterações de um diminui as iterações do próximo. 
+   Isso resulta em uma complexidade aparente de n³ para todos os casos, 
+   embora o número real de iterações seja menor a cada execução.
+
+4. Alguma Coisa 2:
+   Nesta variação do algoritmo anterior, observa-se que o número de iterações é menor devido a uma 
+   modificação no segundo loop. Apesar de manter a estrutura em que o segundo loop depende do primeiro 
+   e o terceiro depende do segundo, a alteração resulta em menos iterações no segundo loop. 
+   Assim, a complexidade permanece n³ para todos os casos, 
+   mas o algoritmo realiza menos iterações em cada loop em comparação com a versão anterior.

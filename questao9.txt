@@ -1,0 +1,38 @@
+1. Pesquisa 1:
+   Ao calcular a complexidade desta recursão, é necessário observar as linhas impactantes na determinação 
+   dessa complexidade. Este primeiro algoritmo tem apenas duas linhas após uma verificação, 
+   sendo possível atribuir apenas essas linhas para a formação da complexidade. 
+   Na primeira linha após o 'if', percebe-se uma função de custo n3, onde o 'n' (entrada) é 
+   multiplicado por ele mesmo três vezes. Este valor é então passado para a função recursiva, 
+   mas com aproximadamente 1/3 de seu valor. Portanto, a função de complexidade é expressa como: 
+   T(n) = T(n / 3) + n3
+   Onde T(n / 3) representa 1/3 da entrada passada na primeira recursão, 
+   e n3 é o custo da multiplicação do 'n' por si mesmo três vezes.
+
+2. Pesquisa 2:
+   Neste caso, o algoritmo apresenta uma variação em relação à pesquisa anterior. 
+   Ao ser adicionada uma função para encontrar o maior elemento no vetor, 
+   há um custo 'n' associado a essa busca. A última linha da recursão divide a entrada 
+   (maior elemento encontrado) por 5, e há apenas uma adição à função de recorrência para calcular a complexidade, 
+   que é a multiplicação (3 vezes) pela entrada. A função de complexidade é, portanto:
+   T(n) = 3 . T(n / 5) + n
+   Onde T(n / 5) representa a entrada dividida por 5, 
+   o '3' é a multiplicação após a divisão da entrada, e '+ n' 
+   representa a função para calcular o maior elemento novamente.
+
+3. Pesquisa 3:
+   Nesta pesquisa, a formação da complexidade é semelhante ao algoritmo anterior. 
+   Uma das poucas diferenças é a instrução para ordenar o vetor com os elementos. 
+   Dados os algoritmos de ordenação apresentados, 
+   opta-se por um que possui uma complexidade n . log(n), 
+   pois é mais eficiente do que n2. Assim, a função de complexidade é expressa como:
+   T(n) = 2 . T(n / 3) + n . log(n).
+   Onde T(n / 3) representa a entrada dividida por 3, 
+   o '2' antes da entrada está relacionado à instrução no código para multiplicar a entrada, 
+   agora reduzida por 3, e o termo n . log(n) é o tempo do algoritmo de ordenação.
+
+4. Mágica:
+   Nesta recursão, o algoritmo é semelhante ao quicksort, 
+   com algumas alterações leves na posição dos parâmetros. 
+   Portanto, a função de complexidade é a mesma que a do quicksort, 
+   sendo, Omega(n . log(n)), Theta(n . log(n)) e, no pior caso, O(n2).

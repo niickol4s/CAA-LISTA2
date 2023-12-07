@@ -1,0 +1,15 @@
+Algoritmo 1: n² + 2
+
+O tempo de execução do primeiro algoritmo é quadrático, pois cada loop executa n iterações. 
+O + 2 representa o tempo de execução das duas linhas fora dos loops.
+
+Algoritmo 2: n.log n + 2
+
+O tempo de execução do segundo algoritmo é logarítmico, pois o primeiro loop executa n/2 iterações. 
+O segundo loop executa n iterações, mas a cada iteração, o tempo de execução é reduzido pela metade. 
+O + 2 representa o tempo de execução das duas linhas fora dos loops.
+
+Algoritmo 3: Infinito
+
+O terceiro algoritmo é um loop infinito, pois o valor inicial do loop é 0, e cada iteração o incrementa por 0. 
+Como 0 * x = 0, para qualquer valor de x, o loop nunca sairá da primeira iteração.
